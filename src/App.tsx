@@ -1,8 +1,8 @@
 import React from 'react';
-import Countries from './pages/Countries';
+import Navigation from './Navigation';
 
 const App = () => {
-  return <Countries />;
+  return <Navigation/>;
 };
 
 export default App;
