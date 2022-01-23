@@ -14,9 +14,10 @@ const useFetch = (url: string) => {
       setLoading(true);
       const {data} = await axios.get<CountryType[]>(`${baseUrl}${url}`);
       setCountries(data);
-      setLoading(false);
     } catch (error) {
       setError(true);
+    } finally {
+      setLoading(false);
     }
   };
 

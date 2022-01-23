@@ -1,6 +1,5 @@
 import React, {FunctionComponent} from 'react';
 import {View, Text, Image} from 'react-native';
-import {CountryType} from '../../../types/country';
 import styles from './CountryCard.style';
 
 interface IProps {
