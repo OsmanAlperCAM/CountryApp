@@ -14,9 +14,17 @@ const Stack = createNativeStackNavigator<StackParams>();
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name={'countries'} component={Countries} />
-        <Stack.Screen name={'countryDetail'} component={CountryDetail} />
+      <Stack.Navigator screenOptions={{headerTitleAlign: 'center'}}>
+        <Stack.Screen
+          options={{title: 'COUNTRIES'}}
+          name={'countries'}
+          component={Countries}
+        />
+        <Stack.Screen
+          options={{title: 'COUNTRY DETAIL'}}
+          name={'countryDetail'}
+          component={CountryDetail}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

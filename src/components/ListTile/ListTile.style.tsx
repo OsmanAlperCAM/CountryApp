@@ -14,11 +14,11 @@ export default StyleSheet.create({
     },
     shadowOpacity: 0.3,
     shadowRadius: 4.65,
-
     elevation: 8,
   },
   text_container: {
     marginLeft: 8,
+    flex:1
   },
   title: {
     color: 'black',

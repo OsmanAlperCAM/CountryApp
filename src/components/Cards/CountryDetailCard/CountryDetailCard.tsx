@@ -15,7 +15,7 @@ const CountryDetailCard: FunctionComponent<Props> = ({country}) => {
       <Image style={styles.image} source={{uri: country.flags.png}} />
       <ListTile
         icon={'business'}
-        title={country.capital.toString()}
+        title={country.capital?.toString()}
         subtitle="Capital"
       />
       <ListTile
