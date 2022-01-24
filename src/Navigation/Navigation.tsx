@@ -4,10 +4,12 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Countries from '../pages/Countries';
 import CountryDetail from '../pages/CountryDetail';
 import {CountryType} from '../types/country';
+import Map from '../pages/Map';
 
 export type StackParams = {
   countries: any;
   countryDetail: {country: CountryType};
+  map: {country: CountryType[]};
 };
 const Stack = createNativeStackNavigator<StackParams>();
 
@@ -24,6 +26,11 @@ const Navigation = () => {
           options={{title: 'COUNTRY DETAIL'}}
           name={'countryDetail'}
           component={CountryDetail}
+        />
+        <Stack.Screen
+          options={{title: 'Map'}}
+          name={'map'}
+          component={Map}
         />
       </Stack.Navigator>
     </NavigationContainer>
