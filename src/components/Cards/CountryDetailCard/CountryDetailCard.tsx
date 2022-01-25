@@ -44,7 +44,7 @@ const CountryDetailCard: FunctionComponent<Props> = ({country}) => {
       <ListTile
         icon={'texture'}
         title={`${country.area} km²`}
-        subtitle="Continent"
+        subtitle="Area"
       />
       <ListTile
         icon={'people'}
