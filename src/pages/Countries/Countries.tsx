@@ -33,17 +33,19 @@ const Countries = () => {
     setCountryList(temporaryCountries);
   };
 
-  const handleGoMapPage = ()=>{
-    navigation.navigate('map',{country: countryList});
-  }
 
   useEffect(() => {
     navigation.setOptions({
-      headerRight: () => <Icon name="map" size={30} onPress={handleGoMapPage} />,
+      headerRight: () => (
+        <Icon
+          name="map"
+          size={30}
+          onPress={() => {
+            navigation.navigate('map', {countries: countries});
+          }}
+        />
+      ),
     });
-  }, []);
-
-  useEffect(() => {
     setCountryList(countries);
   }, [countries]);
 

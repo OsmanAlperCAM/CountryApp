@@ -9,7 +9,7 @@ import Map from '../pages/Map';
 export type StackParams = {
   countries: any;
   countryDetail: {country: CountryType};
-  map: {country: CountryType[]};
+  map: {countries: CountryType[]};
 };
 const Stack = createNativeStackNavigator<StackParams>();
 
